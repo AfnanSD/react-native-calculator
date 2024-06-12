@@ -25,12 +25,14 @@ export default ({ onPress, text, size, theme }) => {
 // set dimmenstion
 const screen = Dimensions.get("window");
 const buttonWidth = screen.width / 4;
+const buttonHigth = screen.height / 10;
 
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#333333",
     flex: 1,
-    height: Math.floor(buttonWidth - 10),
+    height: buttonHigth,
+    // Math.floor(buttonWidth - 10),
     alignItems: "center",
     justifyContent: "center",
     borderRadius: Math.floor(buttonWidth),
